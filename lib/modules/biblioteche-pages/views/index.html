@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+<div class="main-content">
+    {% block main %}
+        {% for biblioteca in data.pieces %}
+            <p>
+                <a href="{{biblioteca._url}}">
+                    {{ biblioteca.title }}"</a>
+            </p>
+        {% endfor %}
+    {% endblock %}
+</div>

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block main %}
+    <div class="main-content">
+        <p>{{data.piece.title}}</p>
+        {% for libro in data.piece._libri %}
+
+            <p>{{libro.title}}</p>
+        {% endfor %}
+    </div>
+{% endblock %}

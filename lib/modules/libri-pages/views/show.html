@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="main-content">
+        <p>{{data.piece.title}}</p>
+        {% for biblioteca in data.piece._biblioteche %}
+            <p>{{biblioteca.title}}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
